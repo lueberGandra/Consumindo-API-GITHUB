@@ -1,0 +1,144 @@
+:root {
+    --cor01-: #8a2be2;
+    --cor02-: #5f07b1;
+    --cor03-: #e22b77;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor01-);
+}
+
+nav {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: inline-flex;
+    flex-direction: row;
+    white-space: nowrap;
+    background-color: var(--cor02-);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+nav img {
+    height: 50px;
+}
+
+.search-wrapper {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px
+}
+
+.textInput {
+    display: flex;
+    position: relative;
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    border: 5px var(--cor03-) solid;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.308);
+   
+    color: var(--cor03-);
+    font-weight: bold;
+}
+
+.textInput::placeholder {
+    color: var(--cor03-);
+    opacity: .5
+}
+.erro{
+    display: flex;
+    position: relative;    
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(1px 1px 1px black);
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.searchBtn {
+    position: relative;
+    border-radius: 15px;
+    background-color: var(--cor03-);
+    color: #fff;
+    height: 40px;
+    width: 170px;
+    font-size: 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.308);
+    bottom: 10px;
+}
+
+.result {
+    margin-top: 15px;
+    width: 100%;
+    height: 76vh;
+    display: flex;
+    position: relative;
+    top: 120px;
+    background: rgb(95, 7, 177);
+    background: linear-gradient(180deg, rgba(95, 7, 177, 1) 0%, rgba(190, 7, 255, 1) 100%);
+    justify-content: center;
+
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.678);
+    height: 200px;
+    width: 500px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.308);
+    overflow: hidden;
+    visibility: hidden;
+
+}
+
+.card .profile-img {
+    border: 5px solid var(--cor03-);
+    height: 150px;
+    width: 150px;
+    display: flex;
+    position: relative;
+    margin-right: 20px;
+    border-radius: 50%;
+    
+}
+
+.name,
+.bio {
+    margin: 0 0 10px;
+}
+
+.name {
+    color: var(--cor03-);
+}
+
+.cadastro,
+.update {
+    margin: 0 0 5px;
+    font-size: 1rem;
+
+}
